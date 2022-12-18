@@ -90,9 +90,36 @@
     position: relative;
     color: black;
     padding-left: 10%;
-    padding-top: 10%;
-    font-size: large;
+    padding-top: 7%;
+    font-size: 25px;
     font-weight: lighter;
+}
+
+.content{
+    margin-left: 10%;
+    margin-top: 2%;
+    
+}
+.content a{
+    display: inline-block;
+    background-color: linear-gradient(45deg, #7F85B0, #d2c8d6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: "M_PLUS_2";
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #7F85B0, #d2c8d6);
+    border-radius: 15px 50px;
+    padding: 20px 22px;
+    box-sizing: border-box;
+    color: #fff;
+
 }
 
 .people {
