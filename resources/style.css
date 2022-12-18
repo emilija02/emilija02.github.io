@@ -1,0 +1,93 @@
+*{
+    background-color: #D1CDD2;
+    margin: 0;
+    padding: 0;
+    font-family: "M_PLUS_2";
+}
+
+.banner{ 
+    width: 100%;
+    height:100vh;
+    background-image: url(./img/background-main.png);
+    background-size:  100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    color: #D1CDD2;
+    
+}
+
+.navbar{
+    width: 96%;
+    font-family: "M_PLUS_2";
+    padding: 0, 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding-top: 0;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    font-family: "M_PLUS_2";
+    display: inline-block;
+    margin: 0 25px;
+    align-items: left;
+    padding-top: 0;
+    position: relative;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #7F85B0;
+    position: absolute;
+    left: 0;
+    top: 27px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    font-size: 20px;
+    font-family: "M_PLUS_2";
+    font-weight: light;
+    padding-right: 0;
+
+}
+
+@font-face{
+        font-family: "M_PLUS_2";
+        src: url("./fonts/M_PLUS_2/MPLUS2-VariableFont_wght.ttf");
+}
+
+.logo{
+    width: 170px;
+    height: max-content;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 2px;
+}
+
+.cart{
+    padding-top: 0;
+    width: 40px;
+    height: 40px;
+    color: black;
+    padding-right: 20px;
+    padding-left: 500px;
+}
+
+.main-text{
+    position: relative;
+    color: black;
+}
