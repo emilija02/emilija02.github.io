@@ -10,13 +10,13 @@
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="mountains">
+<body class="banner">
     <div class="from-box">
-        <h1>Sign Up</h1>
+        <h1 id="title">Sign Up</h1>
 
         <form>
             <div class="input-group">
-                <div class="input-field">
+                <div class="input-field" id="nameField">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="Name">
                 </div>
@@ -31,9 +31,37 @@
                     <input type="password" placeholder="Password">
                 </div>
 
-
+                <p>Lost password <a href="#">Click here!</a></p>
             </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn">Sign up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
+            </div>
+
         </form>
 
     </div>
+
+<script>
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let nameField = document.getElementById("nameField");
+    let title = document.getElementById("title");
+
+
+    signinBtn.onclick = function(){
+        nameField.style.maxHeight = "0";
+        title.innerHTML = "Sign in";
+        signupBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+    }
+
+    signupBtn.onclick = function(){
+        nameField.style.maxHeight = "60px";
+        title.innerHTML = "Sign up";
+        signupBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+    }
+
+</script>
 </body>

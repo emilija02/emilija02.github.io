@@ -7,7 +7,21 @@
 
     
 }
-
+@font-face{
+    font-family: "M_PLUS_2";
+    src: url("./fonts/M_PLUS_2/MPLUS2-VariableFont_wght.ttf");
+}
+.banner{
+    width: 100%;
+    height:100vh;
+    background-image: url(./img/background-main.png);
+    background-size:  100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-color: #d2c8d6;
+    z-index: 1;
+}
 
 .from-box{
     width: 90%;
@@ -49,6 +63,9 @@
     display:flex;
     align-items: center;
     font-family: "M_PLUS_2";
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
 }
 
 input{
@@ -64,4 +81,42 @@ input{
 @font-face{
     font-family: "M_PLUS_2";
     src: url("./fonts/M_PLUS_2/MPLUS2-VariableFont_wght.ttf");
+}
+
+form p{
+    font-family: "M_PLUS_2";
+    text-align: left;
+    font-size: 16px;
+}
+
+form p a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: #423754;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 250px;
+}
+
+.btn-field button.disable{
+    background: #eaeaee;
+    color: #555;
 }
