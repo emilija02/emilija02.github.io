@@ -7,11 +7,34 @@
 .banner{ 
     width: 100%;
     height:100vh;
-    background-image: url(./);
+    background-image: url();
     background-size:  100%;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     background-color: #d2c8d6;
+    position: absolute;
     
+}
+.aboutus{
+    font-size: 20px;
+    margin-bottom: 60px;
+    color: #000000;
+    position: relative;
+    background: transparent;
+    font-family: "M_PLUS_2";
+    text-align: center;
+
+}
+
+.aboutus ::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
 }
