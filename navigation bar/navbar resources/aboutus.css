@@ -18,9 +18,7 @@
     text-align: center;
 
 }
-.aboutus p{
-    
-}
+
 .aboutus ::after {
     content: '';
     width: 50px;
@@ -64,11 +62,6 @@
     width: 40%; 
 }
 
-.image-section img{
-    width: 100%;
-    height: auto;
-}
-
 .content-section .content .button{
     margin-top: 30px;
 }
@@ -99,3 +92,5 @@
 .home i{
     z-index: 1;
 }
+
+
