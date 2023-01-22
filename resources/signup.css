@@ -7,9 +7,8 @@
     
 }
 
-*  i{
-    
-}
+
+
 
 @font-face{
     font-family: "M_PLUS_2";
@@ -18,7 +17,6 @@
 .banner{
     width: 100%;
     height:100vh;
-    
     background-size:  100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -80,7 +78,7 @@ input{
     border: 0;
     outline: 0;
     padding: 18px 15px;
-    color: black
+    color: black;
     font-family: "M_PLUS_2";
     
 }
@@ -131,4 +129,15 @@ form p a{
 
 .click{
     text-align: left;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: portrait){
+    .banner {
+        background-size: contain;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }

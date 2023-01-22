@@ -102,7 +102,7 @@
     color: #81438d;
 }
 
- .home i{
+.home i{
     font-size: 80px;
     position: relative;  /* needed for the left property to work */
     right: 20px;
